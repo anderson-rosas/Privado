@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Feliz Cumpleaños!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musicaFondo" autoplay loop preload="auto">
+    <source src="music/Contigo.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="fondo"></div>
+
+  <h1 class="titulo">¡Feliz Cumpleaños!</h1>
+  <h1 class="titulo">Mi Amor</h1>
+
+  <button id="botonCorazon" class="corazon">❤️</button>
+
+  <div id="cartaContainer" class="carta-container oculto">
+    <div class="confeti-container"></div>
+    <div class="carta">
+      <h2>¡Feliz Cumpleaños!</h2>
+      <p>¡Te deseo un día lleno de alegría, sorpresas y mucho amor! Que todos tus sueños se hagan realidad.</p>
+      <p>¡Con cariño!</p>
+      <div class="imagenes-container">
+        <img src="gato.jpg" alt="Imagen 1" class="imagen-pequena">
+        <img src="imagen2.jpg" alt="Imagen 2" class="imagen-pequena">
+      </div>
+    </div>
+  </div>
+
+  <div class="zona-imagen" id="zonaImagen1">
+    <img src="images/" alt="Imagen en zona 1">
+  </div>
+
+  <div class="zona-imagen" id="zonaImagen2">
+    <img src="images/perrito.jpeg" alt="Imagen en zona 2">
+  </div>
+
+  
+  <script>
+    const boton = document.getElementById('botonCorazon');
+    const audio = document.getElementById('musicaFondo');
+
+    boton.addEventListener('click', () => {
+        audio.play();
+    });
+ </script>
+  <script src="script.js"></script>
+</body>
+</html>
