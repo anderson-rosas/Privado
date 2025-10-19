@@ -149,3 +149,50 @@ body {
     object-fit: cover;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 600px) {
+  .titulo {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+
+  .corazon {
+    font-size: 2.2em;
+    margin-top: 20px;
+  }
+
+  .carta-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .carta p {
+    font-size: 1em;
+  }
+
+  .imagenes-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .imagen-pequena {
+    width: 100px;
+    height: 100px;
+  }
+
+  .zona-imagen {
+    width: 100px;
+    height: 100px;
+  }
+
+  #zonaImagen1 {
+    top: 10px;
+    left: 10px;
+  }
+
+  #zonaImagen2 {
+    bottom: 10px;
+    right: 10px;
+  }
+}
